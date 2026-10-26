@@ -1,0 +1,624 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Zendo Project — East Coast Expansion &amp; Community Crisis Response Program Plan (Proposal Draft)</title><style>
+:root{--teal:#1F4E5A;--teal2:#2E6B78;--sage:#7FA99B;--sage-l:#E3EEE9;--sand:#F6F1E8;--lav:#E7E5F3;--lav-d:#6E6A9E;--terra:#C2774E;--terra-l:#F7E6DC;--ink:#24323A;--mute:#5E6E75;--line:#D5DED9}
+@page{size:Letter;margin:0.6in 0.7in 0.7in 0.7in;
+ @bottom-left{content:"Zendo East Coast & Community Crisis Response — Proposal Draft";font:8pt Inter;color:#7d8b90}
+ @bottom-right{content:"Page " counter(page) " of " counter(pages);font:8pt Inter;color:#7d8b90}}
+@page cover{margin:0;@bottom-left{content:none}@bottom-right{content:none}}
+*{box-sizing:border-box}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:Inter,"Open Sans",sans-serif;font-size:9.3pt;line-height:1.42;color:var(--ink);margin:0}
+h1,h2,h3{font-family:Lora,Georgia,serif;color:var(--teal);line-height:1.2}
+h1{font-size:20pt;margin:0 0 4pt;font-weight:600}
+h2{font-size:13.5pt;margin:16pt 0 6pt;font-weight:600;border-bottom:1.5px solid var(--sage);padding-bottom:3pt}
+h3{font-size:11pt;margin:11pt 0 4pt;color:var(--teal2);font-weight:600}
+p{margin:0 0 7pt}
+ul,ol{margin:0 0 8pt;padding-left:16pt} li{margin-bottom:3pt}
+a{color:var(--teal2);text-decoration:none}
+.section{break-before:auto;margin-top:14pt}
+.pb{break-before:page;margin-top:0}
+h1{break-after:avoid}h2,h3{break-after:avoid}
+.kicker{font-size:8pt;letter-spacing:.14em;text-transform:uppercase;color:var(--terra);font-weight:700;margin-bottom:2pt}
+.lead{font-size:11pt;color:var(--mute);margin-bottom:10pt}
+.cite{font-size:7.5pt;color:var(--lav-d);vertical-align:super;font-weight:600}
+.ph{background:#FFF3C4;border:1px dashed #C9A227;border-radius:3px;padding:0 3px;font-size:.92em;color:#6b5400;white-space:nowrap}
+.box{border-radius:8px;padding:9pt 12pt;margin:8pt 0 10pt;break-inside:avoid}
+.box h3{margin-top:0}
+.b-sage{background:var(--sage-l);border-left:4px solid var(--sage)}
+.b-lav{background:var(--lav);border-left:4px solid var(--lav-d)}
+.b-terra{background:var(--terra-l);border-left:4px solid var(--terra)}
+.b-sand{background:var(--sand);border-left:4px solid #CDBB9A}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10pt}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:9pt}
+.grid4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:8pt}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:8pt 10pt;break-inside:avoid}
+.card h3{margin-top:0;font-size:10.5pt}
+.card .tag{display:inline-block;font-size:7.5pt;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:1pt 6pt;border-radius:10pt;margin-bottom:4pt}
+.paid{background:#DCEBF0;color:var(--teal)} .vol{background:var(--sage-l);color:#3E6B5D} .tbd{background:#FFF3C4;color:#6b5400}
+table{width:100%;border-collapse:collapse;margin:6pt 0 10pt;font-size:8.5pt;break-inside:auto}
+th{background:var(--teal);color:#fff;text-align:left;padding:5pt 6pt;font-weight:600}
+td{padding:3.6pt 6pt;border-bottom:1px solid var(--line);vertical-align:top}
+tr:nth-child(even) td{background:#F8FAF9}
+tr{break-inside:avoid}
+.small{font-size:8.5pt;color:var(--mute)}
+.stat{background:var(--sand);border-radius:8px;padding:8pt;text-align:center;break-inside:avoid}
+.stat .n{font-family:Lora,serif;font-size:18pt;color:var(--teal);font-weight:600;line-height:1.1}
+.stat .l{font-size:8pt;color:var(--mute)}
+.principles{display:grid;grid-template-columns:repeat(4,1fr);gap:8pt;margin:8pt 0}
+.principles div{background:var(--teal);color:#fff;border-radius:8px;padding:8pt;font-size:8.5pt;break-inside:avoid}
+.principles b{display:block;font-family:Lora,serif;font-size:10.5pt;margin-bottom:3pt;color:#fff}
+svg{display:block;margin:4pt auto}
+.fig{font-size:8pt;color:var(--mute);text-align:center;margin:-2pt 0 10pt;font-style:italic}
+.toc{columns:2;column-gap:24pt;font-size:9.5pt}
+.toc div{padding:2.5pt 0;border-bottom:1px dotted var(--line);break-inside:avoid}
+.toc span{color:var(--terra);font-weight:700;display:inline-block;width:20pt}
+.refs{font-size:8pt;line-height:1.4} .refs li{margin-bottom:3pt;word-break:break-word}
+.nobreak{break-inside:avoid}
+/* cover */
+.cover{page:cover;height:11in;width:8.5in;position:relative;background:linear-gradient(160deg,#1F4E5A 0%,#2E6B78 55%,#7FA99B 100%);color:#fff;overflow:hidden}
+.cover .inner{position:absolute;left:0.9in;right:0.9in;top:1.6in}
+.cover h1{color:#fff;font-size:34pt;line-height:1.12;margin-bottom:14pt}
+.cover .sub{font-size:13pt;color:#E3EEE9;max-width:5.6in;line-height:1.45}
+.cover .meta{position:absolute;left:0.9in;bottom:1.1in;right:0.9in;font-size:9.5pt;color:#E3EEE9;line-height:1.6}
+.cover .disc{margin-top:12pt;font-size:8pt;color:#cfe0da;border-top:1px solid rgba(255,255,255,.35);padding-top:8pt}
+.cover .pill{display:inline-block;border:1px solid rgba(255,255,255,.55);border-radius:14pt;padding:2pt 10pt;font-size:8pt;letter-spacing:.12em;text-transform:uppercase;margin-bottom:18pt}
+thead{display:table-header-group;break-after:avoid}
+thead tr{break-after:avoid}
+tbody tr:first-child{break-before:avoid}
+.kicker{break-after:avoid}
+.refs{font-size:7.4pt;line-height:1.3}
+
+</style></head><body><div style="font:14px Inter,system-ui,sans-serif;padding:10px 16px;background:#efe1ec;color:#65206b"><a href="../" target="_top" style="color:#65206b;font-weight:600">&larr; Back to the review site</a> &middot; Volunteer-drafted concept, not an official Zendo Project/MAPS document. &middot; <a href="Zendo_East_Coast_Crisis_Response_Plan.pdf" style="color:#65206b">PDF</a></div>
+
+<!-- COVER -->
+<div class="cover"><div class="inner">
+<div class="pill">Program Proposal · Draft for Discussion</div>
+<h1>Bringing Zendo Home:<br>East Coast Expansion &amp;<br>Community Crisis Response</h1>
+<div class="sub">A phased, chapter-based plan to extend Zendo Project’s compassionate psychedelic peer support from festivals and events into year-round, neighborhood-level crisis response — beginning with a single pilot chapter in Brooklyn, New York.</div>
+<svg width="420" height="90" viewBox="0 0 420 90" style="margin:34px 0 0 0">
+ <g fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.5">
+  <circle cx="45" cy="45" r="38"/><circle cx="45" cy="45" r="26" stroke-opacity=".35"/>
+  <path d="M95 45 H150" stroke-dasharray="3 4"/><circle cx="190" cy="45" r="30"/><path d="M230 45 H285" stroke-dasharray="3 4"/>
+  <circle cx="325" cy="45" r="22"/><circle cx="380" cy="45" r="14" stroke-opacity=".4"/></g>
+ <g font-family="Inter" font-size="9" fill="#fff" text-anchor="middle"><text x="45" y="48">Events</text><text x="190" y="48">Chapters</text><text x="325" y="48">Cities</text></g>
+</svg>
+</div>
+<div class="meta">
+<b>Prepared by:</b> <span class="ph" style="color:#6b5400">[Your Name]</span>, Zendo Project volunteer<br>
+<b>Prepared for:</b> Zendo Project leadership, MAPS, and prospective partners<br>
+<b>Version / date:</b> Draft v0.1 · October 2026<br>
+<div class="disc"><b>Disclaimer.</b> This document is an independent proposal written by a volunteer. It is <b>not affiliated with, approved by, or endorsed by Zendo Project or the Multidisciplinary Association for Psychedelic Studies (MAPS)</b> unless and until formally adopted by them. Zendo Project’s name and principles are referenced for alignment only. Nothing here is legal, medical, or clinical advice; all legal, clinical, and insurance elements require review by qualified counsel and licensed professionals. Figures shown in <span style="background:#FFF3C4;color:#6b5400;padding:0 3px;border-radius:2px">yellow brackets</span> are placeholders, not data.</div>
+</div></div>
+
+<!-- CONTENTS + EXEC SUMMARY -->
+<div class="section pb">
+<div class="kicker">Contents</div>
+<div class="toc">
+<div><span>1</span>Executive summary</div><div><span>2</span>Zendo Project today</div><div><span>3</span>The need and the opportunity</div><div><span>4</span>Program model: chapters &amp; roles</div><div><span>5</span>Encounter workflow</div><div><span>6</span>Neighborhood Safe Zones</div><div><span>7</span>The responder app</div><div><span>8</span>Volunteer Resource Board</div><div><span>9</span>Hospital &amp; clinic liaison program</div><div><span>10</span>Training &amp; certification pathway</div><div><span>11</span>Safety, escalation &amp; risk</div><div><span>12</span>Legal, liability &amp; insurance</div><div><span>13</span>Staffing &amp; budget</div><div><span>14</span>Funding strategy</div><div><span>15</span>Partnerships</div><div><span>16</span>Pilot plan &amp; phased rollout</div><div><span>17</span>Success metrics</div><div><span>18</span>Open decisions, next steps &amp; asks</div><div><span>19</span>Sources</div>
+</div>
+
+<h1 style="margin-top:18pt">1. Executive summary</h1>
+<p class="lead">For more than a decade, Zendo Project has shown that a calm space and a trained, compassionate peer can help people move through frightening psychedelic and emotional experiences — often without police, sedation, or a hospital visit. This proposal asks: what would it look like to offer that same care where people live, all year round?</p>
+
+<div class="grid2">
+<div class="box b-sage"><h3>The idea</h3>
+<p>Create a <b>Zendo Community Crisis Response program</b> organized as small, neighborhood <b>chapters</b>, starting on the East Coast with one pilot in Brooklyn, NY. Trained Zendo volunteers respond in person to people experiencing a mental-health crisis, a difficult psychedelic experience, or a distressing drug experience; every encounter has <b>remote licensed clinical oversight</b>; and each neighborhood has a quiet <b>Safe Zone</b> for de-escalation.</p></div>
+<div class="box b-lav"><h3>What makes it different</h3>
+<ul style="margin:0"><li>Built on Zendo’s Four Principles of Psychedelic Care and existing volunteer training.</li><li>Peer-led, clinically supervised, medically backstopped — never a replacement for 911 or 988.</li><li>A purpose-built responder app aligned with Zendo’s existing <b>Serenity</b> documentation tool.</li><li>Grows slowly, one chapter at a time, with go/no-go gates.</li></ul></div>
+</div>
+
+<h3>Each chapter includes</h3>
+<div class="grid3">
+<div class="card"><span class="tag paid">Paid / stipend</span><h3>Chapter Coordinator</h3><p class="small">Runs scheduling, dispatch oversight, volunteer care, and partner relationships.</p></div>
+<div class="card"><span class="tag paid">Paid</span><h3>Remote Clinical Supervisor</h3><p class="small">LCSW (or LMSW under qualifying supervision) available live to every encounter.</p></div>
+<div class="card"><span class="tag paid">Paid / on-call</span><h3>On-call Psychiatrist (MD/DO)</h3><p class="small">Consults on emergencies, medical/psychiatric red flags, and escalation.</p></div>
+<div class="card"><span class="tag tbd">Stipend or volunteer</span><h3>Hospital &amp; Clinic Liaison</h3><p class="small">Helps admitted guests and families navigate psychiatric EDs and clinics.</p></div>
+<div class="card"><span class="tag vol">Volunteer</span><h3>Tier 2 Responders</h3><p class="small">Advanced-trained volunteers who lead field responses and Safe Zone shifts.</p></div>
+<div class="card"><span class="tag vol">Volunteer</span><h3>Tier 1 Sitters</h3><p class="small">Foundation-trained volunteers who sit in the Safe Zone, at events, and as second responders.</p></div>
+</div>
+
+<h3>Top-line asks of Zendo / MAPS leadership</h3>
+<ol>
+<li><b>Permission to explore</b> — approval to develop this concept under Zendo’s name with a named staff sponsor.</li>
+<li><b>Alignment on training</b> — confirm how Zendo’s two training levels map to Tier 1 / Tier 2, and co-design a field-response module.</li>
+<li><b>Serenity access</b> — a conversation with Zendo’s systems team about extending or integrating with Serenity.</li>
+<li><b>Legal &amp; insurance review</b> — engage Zendo’s counsel on liability, scope of practice, and privacy before any field activity.</li>
+<li><b>A 6-month discovery phase</b> — partner meetings in Brooklyn, a needs assessment, and a funded pilot budget.</li>
+</ol>
+</div>
+
+<!-- ZENDO TODAY -->
+<div class="section">
+<div class="kicker">Foundation</div>
+<h1>2. Zendo Project today</h1>
+<p>Zendo Project began at Burning Man in 2012 as a harm-reduction initiative of MAPS. After ten years of incubation, it became its own 501(c)(3) nonprofit in 2023 while remaining “closely allied with MAPS.”<span class="cite">[1]</span> Its current mission is “to expand compassionate crisis support — including care for non-ordinary psychological and emotional states — through training, peer-based services, and research across communities and systems of care.”<span class="cite">[2]</span> The team includes mental-health professionals, doctors, nurses, social workers, and harm-reduction experts, with a Medical Director who is an emergency-medicine and EMS physician.<span class="cite">[2]</span></p>
+
+<div class="grid4" style="margin:8pt 0 10pt">
+<div class="stat"><div class="n">2012</div><div class="l">Founded at Burning Man as a MAPS program<span class="cite">[1]</span></div></div>
+<div class="stat"><div class="n">10,000+</div><div class="l">trained peers and professionals (per Zendo)<span class="cite">[3]</span></div></div>
+<div class="stat"><div class="n">6,500+</div><div class="l">people cared for across four continents in first 10 years<span class="cite">[1]</span></div></div>
+<div class="stat"><div class="n">416 / 566</div><div class="l">volunteers trained / guests served, Burning Man 2022<span class="cite">[1]</span></div></div>
+</div>
+
+<h3>The Four Principles of Psychedelic Care<span class="cite">[2]</span></h3>
+<div class="principles">
+<div><b>Safe Space</b>Tending to safety is foundational to healing and transformation.</div>
+<div><b>Sitting, Not Guiding</b>Cultivating presence while letting go of an agenda honors the individual’s inner healing intelligence.</div>
+<div><b>Through, Not Down</b>We accompany people through their experiences, without seeking to halt or bypass the process.</div>
+<div><b>Difficult Is Not Necessarily Bad</b>Difficult and/or complex experiences can lead to wisdom, growth, and new understandings.</div>
+</div>
+
+<h3>How Zendo works at events</h3>
+<p>Zendo provides on-site peer support and a “tranquil space” at events, working “collaboratively with production, medical, security, and law enforcement.”<span class="cite">[4]</span> Volunteer roles include <b>Greeters</b>, <b>Sitters</b>, <b>Logkeepers</b> (who “keep track of lots of moving people and parts, using an iPad”), <b>Logistics</b>, <b>Medical Triage</b> (EMT or higher required), and <b>Pulse</b>, which supports volunteer well-being. All event volunteers receive pre-event and on-site training.<span class="cite">[4]</span> Zendo’s early mission explicitly included reducing “the number of drug-related psychiatric hospitalizations” and demonstrating that safe experiences are possible “without the need for law enforcement-based policies.”<span class="cite">[5]</span></p>
+
+<div class="grid2">
+<div class="box b-sand"><h3>Training offerings (public)</h3>
+<ul style="margin:0">
+<li><b>Free Psychedelic Care Kit / mini-course</b> — a 30-minute training on the Four Principles plus a pocket card.<span class="cite">[3]</span></li>
+<li><b>Zendo SIT (Specialized Training in Psychedelic Care)</b> — 8 hours of live online training plus 1 hour self-paced; CE credit available for eligible licensed professionals.<span class="cite">[6]</span> Modules cover the Four Principles and “Navigating Critical Situations,” including identifying medical and mental-health emergencies within the scope of peer support.<span class="cite">[7]</span></li>
+</ul>
+<p class="small" style="margin-top:5pt">The volunteer reports two Zendo certification levels; their exact names and requirements should be confirmed with Zendo: <span class="ph">[Level 1 name]</span> / <span class="ph">[Level 2 name]</span>. Important: Zendo states the SIT Course Completion Award “does not constitute … authorization to provide … crisis services.”<span class="cite">[6]</span> This plan therefore adds a separate, supervised field-response credential (Section 10).</p></div>
+<div class="box b-lav"><h3>Serenity — Zendo’s encounter documentation tool</h3>
+<p style="margin-bottom:4pt">A 2026 peer-reviewed article co-authored by Zendo-affiliated researchers describes <b>Serenity</b> as “Zendo Project’s internal data collection tool,” developed to standardize encounter documentation with time-stamped records of <b>intake, reassessment, intervention, and disposition</b>.<span class="cite">[8]</span></p>
+<ul style="margin:0">
+<li>Evolved from paper; first software version in 2019 with one iPad per site run by a Logkeeper; later expanded to shift leads, medical triage, and coordinators.</li>
+<li>Validates required fields at guest departure, embedding data quality in the workflow.</li>
+<li>Designed so “sitters do not interact with devices while supporting guests.”<span class="cite">[8]</span></li>
+</ul></div>
+</div>
+<p class="small">Why this matters: Serenity already encodes the encounter lifecycle this program needs. Building the community app <i>with</i> Serenity — rather than beside it — preserves Zendo’s data model, quality standards, and its principle that technology should stay out of the moment of care.</p>
+</div>
+<!-- NEED -->
+<div class="section">
+<div class="kicker">Context</div>
+<h1>3. The need and the opportunity</h1>
+<p class="lead">Psychedelic and other substance use happens mostly outside clinics and festivals — at home, at parties, and in public space. When those experiences become frightening, people and their friends often have only two options: ride it out alone or call 911.</p>
+<p>MAPS and Zendo have noted that over 5.5 million people in the U.S. used psychedelics in 2019 (Livne et al., 2022), and that “most psychedelic use occurs outside of therapeutic contexts.”<span class="cite">[1]</span> Zendo’s leadership has argued that its skills are “highly transferable” and could “fill a gap in care” by making peer support more available to everyone.<span class="cite">[1]</span> Local data for Brooklyn should be gathered during discovery: <span class="ph">[# psychiatric ED visits related to hallucinogens/stimulants, Brooklyn, most recent year — source: NYC DOHMH / SPARCS]</span>, <span class="ph">[# 911 mental-health (EDP) calls in pilot precincts]</span>, <span class="ph">[nightlife venue count in pilot area]</span>.</p>
+
+<h3>What existing models teach us</h3>
+<table>
+<thead><tr><th style="width:20%">Model</th><th style="width:42%">What it is</th><th>Lesson for this program</th></tr></thead>
+<tr><td><b>CAHOOTS</b><br><span class="small">Eugene/Springfield, OR</span></td><td>Launched 1989 by White Bird Clinic; two-person teams (a medic plus a crisis worker), unarmed, using trauma-informed de-escalation and harm reduction. White Bird reported roughly 24,000 calls in a year with police backup requested only 150 times, on a ~$2.1M budget.<span class="cite">[9]</span></td><td><b>Non-police response works — and funding is fragile.</b> In April 2025 White Bird and the City of Eugene ended CAHOOTS service in Eugene over contract and funding issues; city funding covered about 40% of its cost there. Service continued in Springfield.<span class="cite">[10]</span> Grow slowly and diversify funding.</td></tr>
+<tr><td><b>B-HEARD</b><br><span class="small">New York City</span></td><td>Since 2021, teams of two FDNY EMTs/paramedics plus an NYC Health + Hospitals mental-health professional respond to eligible 911 mental-health calls, 16 hours/day in parts of four boroughs, including several Brooklyn neighborhoods. Teams are not dispatched where violence or imminent harm is identified.<span class="cite">[11]</span></td><td><b>A complement, not a competitor.</b> A 2025 Comptroller audit (as reported) found teams did not respond to over one-third of eligible calls; staffing and funding remain challenges.<span class="cite">[12]</span> Zendo chapters could fill the lower-acuity, substance-related, and event niche B-HEARD does not target.</td></tr>
+<tr><td><b>988 Lifeline</b></td><td>National three-digit Suicide &amp; Crisis Lifeline, launched July 2022, funded by SAMHSA and administered by Vibrant Emotional Health; 24/7 support for mental-health, suicide, and substance-use crises.<span class="cite">[13,14]</span> In NYC, 988 connects to counselors and the city’s urgent mental-health services.<span class="cite">[11]</span></td><td><b>Built-in escalation path.</b> The app should offer one-tap 988 and 911, and the program should seek a referral relationship with NYC 988.</td></tr>
+<tr><td><b>Fireside Project</b></td><td>Nonprofit Psychedelic Support Line (since 2021): free, confidential peer support by phone, text, and app, 11 a.m.–11 p.m. Pacific, at 62-FIRESIDE; ~40,000 conversations, 95% of callers felt heard and understood (self-reported).<span class="cite">[15,16]</span></td><td><b>Remote + in-person = continuum.</b> Fireside offers remote support; Zendo chapters could offer the in-person layer. Warm-handoff and integration-support partnership is a natural fit.</td></tr>
+<tr><td><b>Peer crisis response</b></td><td>NYC Mobile Crisis Teams pair master’s-level clinicians with peer staff for urgent (non-911) referrals.<span class="cite">[11]</span></td><td>Peer + clinician pairing is an established practice — our model applies it with clinicians supervising remotely.</td></tr>
+</table>
+
+<div class="box b-sage"><h3>The gap this program fills</h3>
+<p style="margin:0">A person having a terrifying trip in a Brooklyn apartment at 2 a.m., or a friend sitting with someone at a warehouse party, needs someone calm, trained, and non-judgmental <i>now</i> — but often does not need police, an ambulance, or an inpatient admission. Zendo’s model is purpose-built for exactly that moment. The opportunity is to offer it locally, year-round, with professional oversight and clear escalation paths.</p></div>
+</div>
+
+<!-- PROGRAM MODEL -->
+<div class="section">
+<div class="kicker">Design</div>
+<h1>4. Program model: chapters &amp; roles</h1>
+<p>The program is organized as <b>neighborhood chapters</b> under an East Coast program umbrella, which itself sits under Zendo Project’s governance, training standards, and medical direction. Chapters share one app, one training pathway, and one set of protocols; each chapter is small enough that volunteers can reach a person on foot or by short transit ride.</p>
+
+<svg width="660" height="300" viewBox="0 0 660 300" font-family="Inter" font-size="10">
+ <defs><marker id="a" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#7FA99B"/></marker></defs>
+ <rect x="230" y="6" width="200" height="38" rx="8" fill="#1F4E5A"/><text x="330" y="22" fill="#fff" text-anchor="middle" font-weight="700">Zendo Project</text><text x="330" y="36" fill="#E3EEE9" text-anchor="middle" font-size="8.5">Governance · Training · Medical Director</text>
+ <rect x="230" y="66" width="200" height="38" rx="8" fill="#2E6B78"/><text x="330" y="82" fill="#fff" text-anchor="middle" font-weight="700">East Coast Program Lead</text><text x="330" y="96" fill="#E3EEE9" text-anchor="middle" font-size="8.5">App · protocols · funding · QA</text>
+ <line x1="330" y1="44" x2="330" y2="64" stroke="#7FA99B" stroke-width="2" marker-end="url(#a)"/>
+ <line x1="330" y1="104" x2="330" y2="124" stroke="#7FA99B" stroke-width="2" marker-end="url(#a)"/>
+ <rect x="20" y="126" width="620" height="166" rx="12" fill="#F6F1E8" stroke="#CDBB9A"/>
+ <text x="36" y="144" fill="#C2774E" font-weight="700" font-size="9" letter-spacing="1.2">NEIGHBORHOOD CHAPTER (e.g., pilot: Brooklyn)</text>
+ <rect x="250" y="152" width="160" height="34" rx="7" fill="#fff" stroke="#1F4E5A"/><text x="330" y="167" text-anchor="middle" font-weight="700" fill="#1F4E5A">Chapter Coordinator</text><text x="330" y="179" text-anchor="middle" font-size="8.5" fill="#5E6E75">dispatch · scheduling · care</text>
+ <rect x="36" y="152" width="180" height="34" rx="7" fill="#E7E5F3" stroke="#6E6A9E"/><text x="126" y="167" text-anchor="middle" font-weight="700" fill="#45417a">Remote Clinical Supervisor</text><text x="126" y="179" text-anchor="middle" font-size="8.5" fill="#5E6E75">LCSW (or supervised LMSW)</text>
+ <rect x="444" y="152" width="180" height="34" rx="7" fill="#E7E5F3" stroke="#6E6A9E"/><text x="534" y="167" text-anchor="middle" font-weight="700" fill="#45417a">On-call Psychiatrist</text><text x="534" y="179" text-anchor="middle" font-size="8.5" fill="#5E6E75">MD/DO · emergency consults</text>
+ <line x1="216" y1="169" x2="248" y2="169" stroke="#6E6A9E" stroke-dasharray="3 3"/><line x1="412" y1="169" x2="442" y2="169" stroke="#6E6A9E" stroke-dasharray="3 3"/>
+ <line x1="330" y1="186" x2="330" y2="204" stroke="#7FA99B" stroke-width="2"/><line x1="110" y1="204" x2="550" y2="204" stroke="#7FA99B" stroke-width="2"/>
+ <line x1="110" y1="204" x2="110" y2="216" stroke="#7FA99B" stroke-width="2"/><line x1="257" y1="204" x2="257" y2="216" stroke="#7FA99B" stroke-width="2"/><line x1="403" y1="204" x2="403" y2="216" stroke="#7FA99B" stroke-width="2"/><line x1="550" y1="204" x2="550" y2="216" stroke="#7FA99B" stroke-width="2"/>
+ <rect x="40" y="218" width="140" height="40" rx="7" fill="#E3EEE9" stroke="#7FA99B"/><text x="110" y="234" text-anchor="middle" font-weight="700" fill="#2f5a4d">Tier 2 Responders</text><text x="110" y="247" text-anchor="middle" font-size="8.5" fill="#5E6E75">lead field responses</text>
+ <rect x="187" y="218" width="140" height="40" rx="7" fill="#E3EEE9" stroke="#7FA99B"/><text x="257" y="234" text-anchor="middle" font-weight="700" fill="#2f5a4d">Tier 1 Sitters</text><text x="257" y="247" text-anchor="middle" font-size="8.5" fill="#5E6E75">Safe Zone · events · 2nd</text>
+ <rect x="333" y="218" width="140" height="40" rx="7" fill="#F7E6DC" stroke="#C2774E"/><text x="403" y="234" text-anchor="middle" font-weight="700" fill="#8a4c2b">Hospital Liaison</text><text x="403" y="247" text-anchor="middle" font-size="8.5" fill="#5E6E75">EDs · CPEPs · clinics</text>
+ <rect x="480" y="218" width="140" height="40" rx="7" fill="#F7E6DC" stroke="#C2774E"/><text x="550" y="234" text-anchor="middle" font-weight="700" fill="#8a4c2b">Safe Zone</text><text x="550" y="247" text-anchor="middle" font-size="8.5" fill="#5E6E75">host site · quiet room</text>
+ <text x="330" y="282" text-anchor="middle" font-size="8.5" fill="#5E6E75">Solid lines = reporting · dashed = live clinical consultation on every encounter</text>
+</svg>
+<div class="fig">Figure 1. Proposed chapter structure.</div>
+
+<table>
+<thead><tr><th style="width:19%">Role</th><th style="width:43%">Core responsibilities</th><th style="width:22%">Qualifications</th><th>Status</th></tr></thead>
+<tr><td><b>Chapter Coordinator</b></td><td>Owns the on-call roster and event coverage; monitors live encounters in the app; recruits and supports volunteers; runs debriefs; maintains partner and Safe Zone relationships.</td><td>Zendo Tier 2; leadership experience; ideally harm-reduction background.</td><td>Paid part-time</td></tr>
+<tr><td><b>Remote Clinical Supervisor</b></td><td>Joins every encounter by in-app chat/voice; supports risk assessment; decides with responder on escalation; signs off on encounter close; provides group supervision.</td><td>Licensed in the state where the guest is located — see scope note below.</td><td>Paid (hourly on-call + supervision)</td></tr>
+<tr><td><b>On-call Psychiatrist</b></td><td>Second-line consult for medical/psychiatric red flags (e.g., suspected serotonin syndrome, psychosis with risk, interactions); advises when to call 911; reviews protocols with Zendo’s Medical Director.</td><td>MD/DO, state-licensed; psychiatry or emergency medicine.</td><td>Paid retainer / per-consult</td></tr>
+<tr><td><b>Hospital &amp; Clinic Liaison</b></td><td>Maintains relationships with local EDs, psychiatric emergency programs, and clinics; supports guests/families (with consent) after admission; helps route to the right level of care.</td><td>Social-work, peer-specialist, or patient-navigator background.</td><td>Stipend or volunteer <span class="ph">[decide]</span></td></tr>
+<tr><td><b>Tier 2 Responder</b></td><td>Primary in-person responder; leads Safe Zone shifts; mentors Tier 1.</td><td>Zendo Level 2 <span class="ph">[confirm]</span> + field credential.</td><td>Volunteer</td></tr>
+<tr><td><b>Tier 1 Sitter</b></td><td>Sits with guests in Safe Zones and at events; second responder alongside Tier 2.</td><td>Zendo Level 1 <span class="ph">[confirm]</span> + orientation.</td><td>Volunteer</td></tr>
+</table>
+
+<div class="box b-lav"><h3>Clinical oversight: LMSW vs. LCSW scope (verify with counsel)</h3>
+<ul style="margin:0">
+<li><b>New York:</b> an LMSW may provide clinical social work services only under supervision by a qualified LCSW, psychologist, or psychiatrist; an LCSW may practice clinical social work independently.<span class="cite">[17,18]</span></li>
+<li><b>New Jersey:</b> an LSW may provide clinical services only under supervision of an eligible LCSW (including at least one hour weekly of face-to-face or qualifying HIPAA-compliant video supervision).<span class="cite">[19]</span></li>
+<li><b>Massachusetts:</b> the independent clinical license is the <b>LICSW</b>; an LCSW may do clinical work only when employed under LICSW supervision.<span class="cite">[20]</span></li>
+</ul>
+<p class="small" style="margin:5pt 0 0"><b>Recommendation:</b> make the chapter’s lead clinical supervisor an independently licensed clinician (NY/NJ LCSW, MA LICSW). LMSWs can staff on-call shifts under that person’s documented supervision. Counsel should advise whether real-time oversight of peer volunteers creates a clinical relationship with the guest, and how licensure applies when supervising remotely across state lines.</p></div>
+</div>
+<!-- WORKFLOW -->
+<div class="section pb">
+<div class="kicker">Operations</div>
+<h1>5. Encounter workflow</h1>
+<p>Every encounter follows the same lifecycle Zendo already documents in Serenity — <b>intake → reassessment → intervention → disposition</b><span class="cite">[8]</span> — with a safety screen at the front and a clinician present (remotely) throughout.</p>
+
+<svg width="670" height="560" viewBox="0 0 670 560" font-family="Inter" font-size="9.5">
+ <defs><marker id="m" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#5E6E75"/></marker></defs>
+ <g stroke="#5E6E75" stroke-width="1.4" fill="none" marker-end="url(#m)">
+  <line x1="250" y1="52" x2="250" y2="72"/><line x1="250" y1="128" x2="250" y2="150"/><line x1="350" y1="104" x2="452" y2="104"/>
+  <line x1="250" y1="196" x2="250" y2="218"/><line x1="250" y1="276" x2="250" y2="298"/><line x1="250" y1="350" x2="250" y2="372"/>
+  <line x1="350" y1="324" x2="452" y2="324"/>
+  <path d="M250 418 L250 436 L100 436 L100 452"/><line x1="250" y1="418" x2="250" y2="452"/><path d="M250 436 L400 436 L400 452"/>
+  <path d="M100 498 L100 520 L235 520"/><path d="M250 498 L250 512"/><path d="M400 498 L400 520 L265 520"/>
+ </g>
+ <!-- 1 alert -->
+ <rect x="150" y="10" width="200" height="42" rx="21" fill="#1F4E5A"/><text x="250" y="28" text-anchor="middle" fill="#fff" font-weight="700">1 · Crisis alert</text><text x="250" y="42" text-anchor="middle" fill="#E3EEE9" font-size="8.5">requester · partner · event · friend</text>
+ <!-- 2 triage diamond -->
+ <polygon points="250,74 350,104 250,134 150,104" fill="#F7E6DC" stroke="#C2774E" stroke-width="1.4"/><text x="250" y="101" text-anchor="middle" font-weight="700" fill="#8a4c2b">2 · Red-flag</text><text x="250" y="113" text-anchor="middle" font-weight="700" fill="#8a4c2b">screen</text>
+ <text x="400" y="98" text-anchor="middle" font-size="8.5" fill="#8a4c2b" font-weight="700">YES</text>
+ <rect x="454" y="70" width="206" height="78" rx="8" fill="#C2774E"/><text x="557" y="88" text-anchor="middle" fill="#fff" font-weight="700">Call 911 now (one tap)</text>
+ <text x="557" y="103" text-anchor="middle" fill="#fff" font-size="8.3">weapon/violence · not breathing ·</text><text x="557" y="115" text-anchor="middle" fill="#fff" font-size="8.3">unresponsive · seizure · overdose signs ·</text><text x="557" y="127" text-anchor="middle" fill="#fff" font-size="8.3">imminent suicide risk · chest pain/overheating</text><text x="557" y="140" text-anchor="middle" fill="#fff" font-size="8">volunteers support only if safe</text>
+ <text x="262" y="145" font-size="8.5" fill="#2f5a4d" font-weight="700">NO</text>
+ <!-- 3 dispatch -->
+ <rect x="150" y="152" width="200" height="44" rx="8" fill="#E3EEE9" stroke="#7FA99B"/><text x="250" y="170" text-anchor="middle" font-weight="700" fill="#1F4E5A">3 · Dispatch</text><text x="250" y="184" text-anchor="middle" font-size="8.5" fill="#5E6E75">nearest available Tier 2 (+ partner) accepts</text>
+ <!-- 4 open -->
+ <rect x="130" y="220" width="240" height="56" rx="8" fill="#E7E5F3" stroke="#6E6A9E"/><text x="250" y="238" text-anchor="middle" font-weight="700" fill="#45417a">4 · Encounter opens in app</text><text x="250" y="252" text-anchor="middle" font-size="8.5" fill="#5E6E75">clinician + coordinator auto-joined to chat</text><text x="250" y="265" text-anchor="middle" font-size="8.5" fill="#5E6E75">nearest ED/CPEP, 988, 911 shown · backup button</text>
+ <!-- 5 onscene -->
+ <rect x="150" y="300" width="200" height="50" rx="8" fill="#E3EEE9" stroke="#7FA99B"/><text x="250" y="318" text-anchor="middle" font-weight="700" fill="#1F4E5A">5 · On-scene support</text><text x="250" y="331" text-anchor="middle" font-size="8.5" fill="#5E6E75">scene safety · consent · Four Principles</text><text x="250" y="343" text-anchor="middle" font-size="8.5" fill="#5E6E75">move to Safe Zone if appropriate</text>
+ <rect x="454" y="296" width="206" height="58" rx="8" fill="#fff" stroke="#6E6A9E" stroke-dasharray="4 3"/><text x="557" y="313" text-anchor="middle" font-weight="700" fill="#45417a">Escalate support anytime</text><text x="557" y="327" text-anchor="middle" font-size="8.5" fill="#5E6E75">request backup volunteer ·</text><text x="557" y="339" text-anchor="middle" font-size="8.5" fill="#5E6E75">clinician → on-call psychiatrist ·</text><text x="557" y="351" text-anchor="middle" font-size="8.5" fill="#5E6E75">988 / mobile crisis / 911</text>
+ <!-- 6 reassess -->
+ <polygon points="250,374 340,396 250,418 160,396" fill="#F6F1E8" stroke="#CDBB9A" stroke-width="1.4"/><text x="250" y="393" text-anchor="middle" font-weight="700" fill="#1F4E5A">6 · Reassess</text><text x="250" y="405" text-anchor="middle" font-size="8.3" fill="#5E6E75">(every <tspan class="x">[15]</tspan> min)</text>
+ <!-- outcomes -->
+ <rect x="30" y="454" width="140" height="44" rx="8" fill="#7FA99B"/><text x="100" y="472" text-anchor="middle" fill="#fff" font-weight="700">Resolved</text><text x="100" y="486" text-anchor="middle" fill="#fff" font-size="8.3">home / trusted person</text>
+ <rect x="180" y="454" width="140" height="44" rx="8" fill="#6E6A9E"/><text x="250" y="472" text-anchor="middle" fill="#fff" font-weight="700">Needs follow-up</text><text x="250" y="486" text-anchor="middle" fill="#fff" font-size="8.3">988 · clinic · Fireside</text>
+ <rect x="330" y="454" width="140" height="44" rx="8" fill="#C2774E"/><text x="400" y="472" text-anchor="middle" fill="#fff" font-weight="700">Escalates</text><text x="400" y="486" text-anchor="middle" fill="#fff" font-size="8.3">911 / ED + hospital liaison</text>
+ <!-- close -->
+ <rect x="150" y="514" width="200" height="40" rx="20" fill="#1F4E5A"/><text x="250" y="531" text-anchor="middle" fill="#fff" font-weight="700">7 · Close &amp; care</text><text x="250" y="545" text-anchor="middle" fill="#E3EEE9" font-size="8.3">clinician sign-off · notes · debrief</text>
+ <!-- side legend -->
+ <rect x="486" y="380" width="174" height="170" rx="10" fill="#F8FAF9" stroke="#D5DED9"/>
+ <text x="498" y="398" font-weight="700" fill="#1F4E5A">Throughout</text>
+ <text x="498" y="416" font-size="8.5" fill="#5E6E75">• Clinician present in chat</text>
+ <text x="498" y="431" font-size="8.5" fill="#5E6E75">• Responder never alone with</text><text x="507" y="443" font-size="8.5" fill="#5E6E75">an unsafe scene</text>
+ <text x="498" y="458" font-size="8.5" fill="#5E6E75">• Phone away while sitting;</text><text x="507" y="470" font-size="8.5" fill="#5E6E75">coordinator logs (Serenity</text><text x="507" y="482" font-size="8.5" fill="#5E6E75">“Logkeeper” model)</text>
+ <text x="498" y="497" font-size="8.5" fill="#5E6E75">• Guest can decline or leave</text><text x="507" y="509" font-size="8.5" fill="#5E6E75">at any time</text>
+ <text x="498" y="524" font-size="8.5" fill="#5E6E75">• Any doubt → 911 or 988</text>
+ <text x="498" y="539" font-size="8.5" fill="#5E6E75">• Follow-up only with consent</text>
+</svg>
+<div class="fig">Figure 2. Proposed encounter workflow. Reassessment interval is a placeholder to be set by the clinical lead.</div>
+
+<table>
+<thead><tr><th style="width:18%">Step</th><th>What happens</th><th style="width:26%">Who</th></tr></thead>
+<tr><td>1 · Alert</td><td>A request arrives via the app (self, friend, venue, event staff, or partner referral). Requester sees: <i>“If anyone is in danger, call 911 now.”</i></td><td>Requester; app</td></tr>
+<tr><td>2 · Red-flag screen</td><td>3–5 plain-language questions. Any “yes” → app prompts 911 and alerts coordinator; volunteers may support from a safe distance until EMS arrives.</td><td>Requester / coordinator</td></tr>
+<tr><td>3 · Dispatch</td><td>Nearest on-call Tier 2 (with a Tier 1 or second Tier 2 partner — see Section 11) accepts; ETA shared with requester.</td><td>Coordinator; responders</td></tr>
+<tr><td>4 · Encounter opens</td><td>Secure encounter room auto-adds the on-shift clinician and coordinator; shows nearest ED/psychiatric emergency program, 988, 911, Safe Zone, and a “request backup” button.</td><td>App</td></tr>
+<tr><td>5 · On-scene</td><td>Scene safety check, consent, basic needs (water, warmth, quiet), Zendo-style sitting. Move to Safe Zone if guest agrees and is safe to walk/travel.</td><td>Responders; clinician by chat/voice</td></tr>
+<tr><td>6 · Reassess</td><td>Structured check-ins at set intervals; clinician confirms whether to continue, refer, or escalate.</td><td>Responders + clinician</td></tr>
+<tr><td>7 · Disposition &amp; close</td><td>Home/trusted person, referral, or ED with liaison notified. Clinician sign-off; brief notes; responder debrief and Pulse-style check-in.</td><td>All</td></tr>
+</table>
+</div>
+
+<!-- SAFE ZONES -->
+<div class="section">
+<div class="kicker">Place</div>
+<h1>6. Neighborhood Safe Zones</h1>
+<p>A Safe Zone is the year-round equivalent of the Zendo space at an event: a quiet, warm, low-stimulation room where a guest and volunteer can sit, rest, and let the experience settle. The aim is the first principle — <i>Safe Space</i> — made permanent in a neighborhood.</p>
+
+<div class="grid2">
+<div><h3>Proposed space requirements</h3>
+<ul>
+<li>Private, quiet room(s) with dimmable light; space for 2–4 guests plus sitters <span class="ph">[target sq ft]</span></li>
+<li>Comfortable seating, mats/beds, blankets, water, light snacks, art supplies (used since MAPS’ early event safe spaces<span class="cite">[21]</span>)</li>
+<li>Accessible entrance, restroom, climate control, Wi-Fi/cell signal</li>
+<li>First-aid kit, AED <span class="ph">[confirm]</span>, naloxone, posted emergency plan</li>
+<li>Separate staff area for debriefing; secure storage; no surveillance cameras in care areas</li>
+<li>Clear address for EMS access</li></ul></div>
+<div><h3>Hosting options (lowest cost first)</h3>
+<ol>
+<li><b>Partner-hosted room</b> in an existing harm-reduction, community, or faith space, after hours <span class="ph">[in-kind]</span></li>
+<li><b>Pop-up Safe Zone</b> at events and parties (Zendo’s existing model)</li>
+<li><b>Shared lease</b> with an allied nonprofit</li>
+<li><b>Dedicated storefront</b> (later phases only)</li></ol>
+<div class="box b-sand" style="margin-top:6pt"><b>Staffing during open hours:</b> at least one Tier 2 + one Tier 1 on site, coordinator on call, clinician reachable in-app. Open hours start limited (e.g., weekend nights) and expand with demand data.</div></div>
+</div>
+
+<h3>Safe Zone costs (placeholders — obtain quotes)</h3>
+<table>
+<thead><tr><th>Item</th><th>Basis</th><th style="width:22%">One-time</th><th style="width:22%">Annual</th></tr></thead>
+<tr><td>Space (partner-hosted or lease)</td><td>Hours/week × rate, or in-kind MOU</td><td>—</td><td><span class="ph">[$ — / in-kind]</span></td></tr>
+<tr><td>Build-out &amp; furnishing</td><td>Soft furnishings, lighting, soundproofing, signage</td><td><span class="ph">[$ —]</span></td><td>—</td></tr>
+<tr><td>Safety equipment</td><td>First-aid, naloxone, AED, radios/phones</td><td><span class="ph">[$ —]</span></td><td><span class="ph">[$ — restock]</span></td></tr>
+<tr><td>Supplies &amp; hospitality</td><td>Water, snacks, blankets, laundry, cleaning</td><td>—</td><td><span class="ph">[$ —]</span></td></tr>
+<tr><td>Insurance rider for premises</td><td>Broker quote</td><td>—</td><td><span class="ph">[$ —]</span></td></tr>
+</table>
+
+<div class="box b-sage"><h3>Outcomes from a Safe Zone</h3>
+<p style="margin:0"><b>Resolved →</b> guest leaves with a friend/family member or is accompanied home (transport policy TBD). &nbsp; <b>Needs ongoing support →</b> warm referral (988, clinic, integration support such as Fireside). &nbsp; <b>Escalates →</b> 911/ED, with the hospital liaison notified so the guest and family are not left to navigate the system alone.</p></div>
+</div>
+<!-- APP -->
+<div class="section">
+<div class="kicker">Technology</div>
+<h1>7. The responder app</h1>
+<p>The app is the program’s nervous system: it routes alerts, opens a supervised encounter, keeps escalation one tap away, and lets volunteers sign up for events. It should feel calm, minimal, and usable by someone who is nervous and in the dark.</p>
+
+<div class="grid3">
+<div class="card"><h3>Responder</h3><ul class="small" style="margin:0"><li>On-call toggle &amp; availability</li><li>Nearby alert → accept/decline</li><li>Encounter room: chat/voice with clinician &amp; coordinator</li><li>“Request backup” button</li><li>One-tap 911 / 988; nearest ED, psychiatric ER, Safe Zone</li><li>Post-encounter notes &amp; debrief prompt</li><li>Event &amp; party shift sign-ups</li></ul></div>
+<div class="card"><h3>Coordinator / Clinician</h3><ul class="small" style="margin:0"><li>Live map of on-call responders (on shift only)</li><li>Encounter dashboard &amp; timers for reassessment</li><li>Escalate to on-call psychiatrist</li><li>Clinician sign-off to close encounter</li><li>Roster, events, coverage gaps</li><li>De-identified reports</li></ul></div>
+<div class="card"><h3>Requester (later phase)</h3><ul class="small" style="margin:0"><li>“I need support” / “My friend needs support”</li><li>Red-flag screen → 911 prompt</li><li>Location share (session only)</li><li>ETA &amp; responder first name</li><li>Grounding content while waiting</li><li>Optional anonymous feedback</li></ul></div>
+</div>
+
+<h3>MVP scope (pilot) — build the smallest thing that is safe</h3>
+<table>
+<thead><tr><th style="width:24%">Feature</th><th style="width:12%">MVP?</th><th>Notes</th></tr></thead>
+<tr><td>Volunteer onboarding, roles, credential status</td><td>Yes</td><td>Only credentialed Tier 2 can accept field alerts.</td></tr>
+<tr><td>Alert intake by coordinator</td><td>Yes</td><td>Pilot alerts arrive via partners/hotline and are entered by the coordinator — no public-facing request button yet.</td></tr>
+<tr><td>Nearest-responder dispatch</td><td>Yes</td><td>Location used only while on call; coarse location stored.</td></tr>
+<tr><td>Encounter room (secure chat + voice)</td><td>Yes</td><td>Clinician + coordinator auto-added; end-to-end encrypted.</td></tr>
+<tr><td>Backup / 911 / 988 / nearest facilities</td><td>Yes</td><td>Static, verified facility list per chapter.</td></tr>
+<tr><td>Serenity-aligned encounter record</td><td>Yes</td><td>Intake → reassessment → intervention → disposition; required fields at close.</td></tr>
+<tr><td>Event / party shift sign-ups</td><td>Yes</td><td>Could reuse an existing volunteer-scheduling tool initially.</td></tr>
+<tr><td>Resource Board</td><td>Phase 2</td><td>See Section 8.</td></tr>
+<tr><td>Public requester app</td><td>Phase 3+</td><td>Only after protocols, insurance, and capacity are proven.</td></tr>
+</table>
+
+<div class="grid2">
+<div class="box b-lav"><h3>Integration with Serenity</h3>
+<ul style="margin:0">
+<li><b>Option A — extend Serenity</b> with a “community encounter” mode (preferred if Zendo’s systems team agrees).</li>
+<li><b>Option B — separate dispatch app</b> that writes encounter records into Serenity’s schema.</li>
+<li>Keep Serenity’s design rule: sitters don’t use devices while supporting guests; the <b>remote coordinator acts as Logkeeper</b>, and responders complete notes afterward.<span class="cite">[8]</span></li>
+<li>Reuse Serenity’s required-field validation at disposition.</li></ul></div>
+<div class="box b-terra"><h3>Privacy &amp; HIPAA posture</h3>
+<ul style="margin:0">
+<li><b>HIPAA</b> applies to “covered entities” (health plans, clearinghouses, and providers that conduct certain electronic transactions such as billing) and their business associates.<span class="cite">[22]</span> Whether this program is covered depends on its structure — counsel to decide. Recommendation: <b>design to HIPAA-grade standards regardless</b> and sign BAAs with vendors.</li>
+<li><b>42 CFR Part 2</b> may apply to federally assisted substance-use-disorder programs.<span class="cite">[23]</span> NY’s <b>SHIELD Act</b> sets data-security and breach-notice duties.<span class="cite">[24]</span></li>
+<li>Data minimization: no names required; no substance info tied to identity; location purged after close; retention schedule <span class="ph">[e.g., X days]</span>.</li>
+<li>Written policy for law-enforcement data requests; informed consent language reviewed by counsel.</li></ul></div>
+</div>
+</div>
+
+<!-- RESOURCE BOARD + LIAISON -->
+<div class="section">
+<div class="kicker">Community</div>
+<h1>8. Volunteer Resource Board</h1>
+<p>Every volunteer carries knowledge: a clinic that sees uninsured patients, a Spanish-speaking integration circle, a shelter with open beds tonight, a lawyer who helps with ACS cases. The Resource Board turns that scattered knowledge into a shared, living network.</p>
+<div class="grid2">
+<div><h3>How it works</h3>
+<ol><li>A volunteer posts a need (“Need: Haitian Creole-speaking peer support near Flatbush”).</li><li>Any volunteer can reply, upvote, or tag someone who knows.</li><li>Helpful answers are saved to a <b>verified chapter directory</b> after coordinator review.</li><li>Directory entries carry “last verified” dates and are re-checked quarterly.</li></ol></div>
+<div><h3>Guardrails</h3>
+<ul><li><b>No guest-identifying information</b> in posts — needs are described generically.</li><li>Not for emergencies (auto-reminder: use the encounter room / 911 / 988).</li><li>Moderated by coordinators; code of conduct.</li><li>Pilot can start in a moderated group channel or form before building it into the app.</li></ul></div>
+</div>
+
+<h1 style="margin-top:16pt">9. Hospital &amp; clinic liaison program</h1>
+<p>When an encounter ends in the emergency department, the person often enters a confusing system at their most vulnerable. Each chapter’s liaison helps make that transition humane and helps guests reach the right level of care.</p>
+<div class="grid2">
+<div class="box b-sand"><h3>Liaison responsibilities</h3>
+<ul style="margin:0"><li>Know local options: hospital EDs, Comprehensive Psychiatric Emergency Programs (CPEPs), crisis stabilization/support-and-connection centers, outpatient clinics, detox and integration resources</li><li>Build relationships with ED social work and psychiatric intake teams; pursue MOUs</li><li>With the guest’s consent, follow up after admission: help family understand the process, pass on (with consent) the de-identified encounter summary, connect to discharge resources</li><li>Feed learnings back to the resource directory</li></ul></div>
+<div class="box b-sage"><h3>Boundaries</h3>
+<ul style="margin:0"><li>Liaisons are navigators and advocates, not treating providers</li><li>All contact with hospitals about a guest requires the guest’s written or recorded consent (or a lawful basis advised by counsel)</li><li>Hospital access rules govern any on-site presence</li><li>Pilot targets: <span class="ph">[NYC Health + Hospitals/Kings County — verify CPEP]</span>, <span class="ph">[other Brooklyn ED]</span>, <span class="ph">[community clinic]</span></li></ul></div>
+</div>
+<p class="small">Context: NYC B-HEARD teams offer everyone served follow-up care, including mobile crisis, outreach, or hospital-based programs;<span class="cite">[11]</span> NYC has one Support and Connection Center in East Harlem offering short stays as a hospital alternative (as reported in 2026).<span class="cite">[12]</span> The liaison should map which of these a peer program can refer to.</p>
+</div>
+
+<!-- TRAINING -->
+<div class="section">
+<div class="kicker">People</div>
+<h1>10. Training &amp; certification pathway</h1>
+<p>The pathway builds on Zendo’s existing training and adds field-specific skills that event work doesn’t require (responding in homes and streets, working remotely with a clinician, urban safety). Final content should be co-designed with Zendo’s training team and Medical Director.</p>
+
+<svg width="660" height="150" viewBox="0 0 660 150" font-family="Inter" font-size="9.5">
+ <defs><marker id="t" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#7FA99B"/></marker></defs>
+ <g stroke="#7FA99B" stroke-width="2" marker-end="url(#t)"><line x1="128" y1="60" x2="146" y2="60"/><line x1="290" y1="60" x2="308" y2="60"/><line x1="452" y1="60" x2="470" y2="60"/></g>
+ <rect x="4" y="20" width="122" height="80" rx="10" fill="#F6F1E8" stroke="#CDBB9A"/><text x="65" y="40" text-anchor="middle" font-weight="700" fill="#1F4E5A">Explore</text><text x="65" y="56" text-anchor="middle" font-size="8.5" fill="#5E6E75">Free Zendo</text><text x="65" y="68" text-anchor="middle" font-size="8.5" fill="#5E6E75">mini-course</text><text x="65" y="80" text-anchor="middle" font-size="8.5" fill="#5E6E75">info session</text>
+ <rect x="148" y="20" width="140" height="80" rx="10" fill="#E3EEE9" stroke="#7FA99B"/><text x="218" y="40" text-anchor="middle" font-weight="700" fill="#1F4E5A">Tier 1 · Sitter</text><text x="218" y="56" text-anchor="middle" font-size="8.5" fill="#5E6E75">Zendo Level 1 [confirm]</text><text x="218" y="68" text-anchor="middle" font-size="8.5" fill="#5E6E75">+ chapter orientation</text><text x="218" y="80" text-anchor="middle" font-size="8.5" fill="#5E6E75">+ shadow shifts</text>
+ <rect x="310" y="20" width="140" height="80" rx="10" fill="#7FA99B"/><text x="380" y="40" text-anchor="middle" font-weight="700" fill="#fff">Tier 2 · Responder</text><text x="380" y="56" text-anchor="middle" font-size="8.5" fill="#fff">Zendo Level 2 [confirm]</text><text x="380" y="68" text-anchor="middle" font-size="8.5" fill="#fff">+ field module</text><text x="380" y="80" text-anchor="middle" font-size="8.5" fill="#fff">+ supervised encounters</text>
+ <rect x="472" y="20" width="184" height="80" rx="10" fill="#1F4E5A"/><text x="564" y="40" text-anchor="middle" font-weight="700" fill="#fff">Leadership</text><text x="564" y="56" text-anchor="middle" font-size="8.5" fill="#E3EEE9">Shift lead · Coordinator ·</text><text x="564" y="68" text-anchor="middle" font-size="8.5" fill="#E3EEE9">Liaison · Trainer</text><text x="564" y="80" text-anchor="middle" font-size="8.5" fill="#E3EEE9">(by invitation)</text>
+ <rect x="4" y="112" width="652" height="30" rx="8" fill="#E7E5F3"/><text x="330" y="131" text-anchor="middle" font-size="9" fill="#45417a">Annual recertification · monthly group supervision with clinician · Pulse-style volunteer care · ongoing case reviews</text>
+</svg>
+<div class="fig">Figure 3. Proposed volunteer pathway.</div>
+
+<table>
+<thead><tr><th style="width:18%">Component</th><th style="width:41%">Tier 1 — Sitter</th><th>Tier 2 — Responder</th></tr></thead>
+<tr><td>Zendo foundation</td><td>Zendo Level 1 <span class="ph">[confirm name/hours]</span></td><td>Zendo Level 2 <span class="ph">[confirm]</span>; Zendo SIT recommended<span class="cite">[6]</span></td></tr>
+<tr><td>Safety skills</td><td>CPR/First Aid; naloxone (opioid overdose) training; basic de-escalation</td><td>All Tier 1 + situational/urban safety; recognizing medical red flags (with Medical Director); suicide-risk screening under clinician direction <span class="ph">[tool TBD by clinical lead]</span></td></tr>
+<tr><td>Program protocols</td><td>Safe Zone procedures; consent; confidentiality; mandated-reporting awareness <span class="ph">[counsel]</span></td><td>Field response; working with remote clinician; escalation &amp; 911 handoff; documentation</td></tr>
+<tr><td>Practicum</td><td><span class="ph">[#]</span> shadow shifts in Safe Zone or at events</td><td><span class="ph">[#]</span> encounters as second responder + sign-off by clinical lead</td></tr>
+<tr><td>Screening</td><td>Application, interview, references, background check <span class="ph">[scope per counsel]</span></td><td>Same + demonstrated reliability at Tier 1 for <span class="ph">[# months]</span></td></tr>
+<tr><td>May do</td><td>Sit in Safe Zone/events; accompany a Tier 2</td><td>Accept field alerts; lead Safe Zone shift; mentor Tier 1</td></tr>
+</table>
+<p class="small">Note: this program credential would be issued by the program (and ideally co-branded by Zendo once approved). It is distinct from the Zendo SIT Course Completion Award, which Zendo states is not a credential or authorization to provide crisis services.<span class="cite">[6]</span></p>
+</div>
+<!-- SAFETY -->
+<div class="section">
+<div class="kicker">Safety</div>
+<h1>11. Safety, escalation &amp; risk protocols</h1>
+<p>This program is designed for <b>non-violent, non-life-threatening</b> situations. It does not replace 911, EMS, or 988, and responders never trade safety for presence. Final protocols must be written and signed off by the clinical lead and Zendo’s Medical Director.</p>
+
+<div class="grid2">
+<div class="box b-terra"><h3>Call 911 immediately when…</h3>
+<ul style="margin:0"><li>Anyone is unresponsive, not breathing normally, or has blue/grey lips (give naloxone if opioids possible)</li><li>Seizure, chest pain, very high body temperature, severe confusion with fever/rigidity</li><li>Serious injury, head injury, or uncontrolled bleeding</li><li>Weapon present, violence, or threat of violence</li><li>Imminent risk of suicide or harm to others</li><li>The responder feels unsafe for any reason</li></ul>
+<p class="small" style="margin:5pt 0 0">New York’s 911 Good Samaritan law (Penal Law §220.78) protects people who seek emergency help for an overdose from certain possession charges; it has limits (e.g., sale offenses, warrants, parole/probation).<span class="cite">[25]</span> Volunteers should know and share this to reduce fear of calling.</p></div>
+<div class="box b-lav"><h3>Call the clinician / on-call psychiatrist when…</h3>
+<ul style="margin:0"><li>Any mention of suicidal thoughts or self-harm (clinician leads risk assessment)</li><li>Psychotic symptoms that persist or include risk</li><li>Possible dangerous combinations (e.g., stimulants, MAOIs/SSRIs with MDMA, alcohol + sedatives)</li><li>The person is a minor <span class="ph">[minors policy — counsel]</span></li><li>Guest wants to leave but may be unsafe</li><li>No improvement after <span class="ph">[X]</span> reassessments</li></ul></div>
+</div>
+
+<h3>Volunteer safety standards (proposed)</h3>
+<div class="grid3">
+<div class="card"><h3>Never alone</h3><p class="small">Field responses in pairs (Tier 2 + partner). Solo response only for public, low-risk settings if the clinical lead approves — <span class="ph">[decision]</span>.</p></div>
+<div class="card"><h3>Scene check</h3><p class="small">Pause before entering; coordinator knows exact location; check-in timer; code word for “I need help.” Leave and call 911 if unsafe.</p></div>
+<div class="card"><h3>No transport</h3><p class="small">Volunteers don’t drive guests in personal vehicles in the pilot; walk, rideshare with a partner, or EMS <span class="ph">[policy]</span>.</p></div>
+<div class="card"><h3>Boundaries</h3><p class="small">No restraint, no medication, no substances, no “guiding” the trip. Zendo’s non-directive approach applies.</p></div>
+<div class="card"><h3>Care for carers</h3><p class="small">Mandatory debrief after each encounter; Pulse-style peer support; access to counseling; shift limits.</p></div>
+<div class="card"><h3>Incident review</h3><p class="small">Every escalation and safety incident gets a blameless review with the clinical lead within <span class="ph">[7]</span> days.</p></div>
+</div>
+
+<!-- LEGAL -->
+<h1 style="margin-top:14pt">12. Legal, liability &amp; insurance</h1>
+<p class="small" style="margin-bottom:6pt">The points below are issues to raise with counsel, not legal conclusions.</p>
+<table>
+<thead><tr><th style="width:22%">Issue</th><th style="width:45%">What we know</th><th>Action</th></tr></thead>
+<tr><td>Good Samaritan (civil)</td><td>NY Public Health Law §3000-a shields people who voluntarily and without expectation of payment give first aid or emergency treatment outside a medical facility, except for gross negligence; it excludes licensed health professionals acting in their professional capacity.<span class="cite">[26]</span></td><td>Ask counsel whether it applies to an organized, pre-arranged program (likely limited) and to paid staff.</td></tr>
+<tr><td>Volunteer Protection Act</td><td>Federal law (42 U.S.C. §14501 et seq.) limits some liability for nonprofit volunteers acting within scope; it does not protect the organization itself.<span class="cite">[27]</span></td><td>Clarify scope, training, and documentation needed; state variations (NY/NJ/MA).</td></tr>
+<tr><td>Scope of practice</td><td>Peer support is not therapy or medical care. LMSW/LCSW and MD roles are governed by state licensure rules (Section 4).<span class="cite">[17–20]</span></td><td>Written scope statements per role; clinician contracts; cross-state licensure plan.</td></tr>
+<tr><td>Drug-related exposure</td><td>Volunteers encounter people who have used controlled substances; harm-reduction programs must avoid any appearance of facilitating use.</td><td>Clear no-possession/no-distribution policy; counsel review of Safe Zone operations.</td></tr>
+<tr><td>Privacy &amp; records</td><td>HIPAA, 42 CFR Part 2, SHIELD Act may apply (Section 7).<span class="cite">[22–24]</span></td><td>Privacy impact assessment before app build.</td></tr>
+<tr><td>Mandated reporting / minors</td><td>Obligations vary by role and state.</td><td>Policy for minors and child/elder-abuse disclosures.</td></tr>
+</table>
+<div class="box b-sand"><h3>Insurance to quote (via a nonprofit broker)</h3>
+<p style="margin:0">General liability · professional liability / errors &amp; omissions (covering peer services and clinical consultants) · abuse &amp; molestation · directors &amp; officers · cyber liability (app data) · volunteer accident · hired/non-owned auto · premises coverage for Safe Zones. Confirm whether Zendo’s existing event coverage can be extended or whether a separate policy is needed: <span class="ph">[annual premium estimate]</span>.</p></div>
+</div>
+
+<!-- STAFFING & BUDGET -->
+<div class="section">
+<div class="kicker">Resources</div>
+<h1>13. Staffing &amp; budget (pilot chapter, year 1)</h1>
+<p>All dollar figures below are <b>placeholders</b>. Hours are proposed planning assumptions for a pilot with limited operating hours; they should be replaced with local salary benchmarks (e.g., BLS wage data, partner pay scales) and vendor quotes during discovery.</p>
+<table>
+<thead><tr><th style="width:25%">Line item</th><th style="width:13%">Paid / volunteer</th><th style="width:32%">Basis (proposed)</th><th style="width:15%">Low</th><th style="width:15%">High</th></tr></thead>
+<tr><td><b>Personnel</b></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Chapter Coordinator</td><td>Paid (PT)</td><td>~20 hrs/wk × hourly rate</td><td><span class="ph">[$]</span></td><td><span class="ph">[$]</span></td></tr>
+<tr><td>Remote Clinical Supervisor(s)</td><td>Paid</td><td>On-call hours during operating window + 2 hrs/mo group supervision</td><td><span class="ph">[$]</span></td><td><span class="ph">[$]</span></td></tr>
+<tr><td>On-call Psychiatrist</td><td>Paid</td><td>Monthly retainer + per-consult fee</td><td><span class="ph">[$]</span></td><td><span class="ph">[$]</span></td></tr>
+<tr><td>Hospital &amp; Clinic Liaison</td><td>Stipend / vol.</td><td>~5–10 hrs/wk</td><td><span class="ph">[$0]</span></td><td><span class="ph">[$]</span></td></tr>
+<tr><td>Tier 1 &amp; Tier 2 volunteers</td><td>Volunteer</td><td>Target <span class="ph">[#]</span> Tier 2 + <span class="ph">[#]</span> Tier 1</td><td>$0</td><td>$0</td></tr>
+<tr><td>East Coast Program Lead (shared)</td><td>Paid / vol.</td><td>Share of time allocated to pilot</td><td><span class="ph">[$]</span></td><td><span class="ph">[$]</span></td></tr>
+<tr><td><b>Training</b></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Zendo training seats, CPR, naloxone, field module</td><td>—</td><td>Per-volunteer cost × cohort; scholarships</td><td><span class="ph">[$]</span></td><td><span class="ph">[$]</span></td></tr>
+<tr><td>Background checks</td><td>—</td><td>Per volunteer</td><td><span class="ph">[$]</span></td><td><span class="ph">[$]</span></td></tr>
+<tr><td><b>Technology</b></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>App MVP build (or Serenity extension)</td><td>—</td><td>Vendor quote or pro-bono partner</td><td><span class="ph">[$]</span></td><td><span class="ph">[$]</span></td></tr>
+<tr><td>Hosting, secure messaging, licenses</td><td>—</td><td>HIPAA-eligible vendors with BAAs</td><td><span class="ph">[$]</span></td><td><span class="ph">[$]</span></td></tr>
+<tr><td><b>Safe Zone</b></td><td></td><td>See Section 6</td><td><span class="ph">[$]</span></td><td><span class="ph">[$]</span></td></tr>
+<tr><td><b>Insurance</b></td><td></td><td>Broker quote (Section 12)</td><td><span class="ph">[$]</span></td><td><span class="ph">[$]</span></td></tr>
+<tr><td><b>Supplies &amp; equipment</b></td><td></td><td>Kits, naloxone, phones/radios, IDs</td><td><span class="ph">[$]</span></td><td><span class="ph">[$]</span></td></tr>
+<tr><td><b>Evaluation</b></td><td></td><td>Data analysis; optional academic partner</td><td><span class="ph">[$]</span></td><td><span class="ph">[$]</span></td></tr>
+<tr><td><b>Admin / fiscal overhead</b></td><td></td><td><span class="ph">[%]</span> of direct costs</td><td><span class="ph">[$]</span></td><td><span class="ph">[$]</span></td></tr>
+<tr><td style="background:#E3EEE9"><b>Total pilot year</b></td><td style="background:#E3EEE9"></td><td style="background:#E3EEE9"></td><td style="background:#E3EEE9"><b><span class="ph">[$ total]</span></b></td><td style="background:#E3EEE9"><b><span class="ph">[$ total]</span></b></td></tr>
+</table>
+<div class="box b-sage"><h3>Why pay the clinicians?</h3><p style="margin:0">Real-time clinical oversight of every encounter is the program’s core safety promise, and it must be reliable at 2 a.m. Volunteer clinicians are hard to schedule consistently, so this plan assumes paid on-call clinical coverage from day one, with volunteer clinicians as a supplement. Many clinicians may also value supervision hours and CE-relevant experience.</p></div>
+
+<h1 style="margin-top:14pt">14. Funding strategy</h1>
+<p class="small">CAHOOTS’ 2025 contraction in Eugene, where city funding covered ~40% of costs and federal grants became uncertain,<span class="cite">[10]</span> is a reminder to avoid single-source dependence.</p>
+<div class="grid3">
+<div class="card"><h3>Philanthropy</h3><p class="small">Psychedelic-aligned foundations and donors (including those who already support Zendo and MAPS); community foundations in Brooklyn/NYC; individual giving and a “sponsor a Safe Zone” campaign.</p></div>
+<div class="card"><h3>Public funds</h3><p class="small">NYC DOHMH and NYC Council discretionary funding; New York State OMH / OASAS grants; opioid settlement funds (harm-reduction eligible uses — verify); SAMHSA crisis-continuum grants.</p></div>
+<div class="card"><h3>Earned &amp; in-kind</h3><p class="small">Event service contracts (festivals, nightlife venues); trainings for venues and staff; pro-bono app development; donated space; university partnerships for evaluation.</p></div>
+</div>
+</div>
+
+<!-- PARTNERSHIPS -->
+<div class="section">
+<div class="kicker">Ecosystem</div>
+<h1>15. Partnerships</h1>
+<table>
+<thead><tr><th style="width:24%">Partner</th><th style="width:38%">Why</th><th>Proposed ask</th></tr></thead>
+<tr><td><b>Zendo Project / MAPS</b></td><td>Brand, principles, training, Serenity, Medical Director, event network</td><td>Sponsorship of pilot; training co-design; data &amp; tech alignment</td></tr>
+<tr><td><b>Fireside Project</b></td><td>National psychedelic peer support line (phone, text, app), 11 a.m.–11 p.m. PT<span class="cite">[15]</span></td><td>Two-way warm handoff protocol; integration follow-up; shared learning; possible cross-training</td></tr>
+<tr><td><b>NYC 988</b> / 988 Lifeline</td><td>24/7 crisis counseling and access to NYC’s urgent mental-health services<span class="cite">[11,14]</span></td><td>Referral pathway for after-hours or remote support; awareness of chapter coverage</td></tr>
+<tr><td><b>NYC DOHMH</b> &amp; Mayor’s Office of Community Mental Health</td><td>Oversee crisis programs including B-HEARD and mobile crisis<span class="cite">[11]</span></td><td>Briefing; data sharing on needs; potential funding; avoid duplication</td></tr>
+<tr><td><b>Hospitals &amp; CPEPs</b> (e.g., NYC Health + Hospitals)</td><td>Escalation destination; liaison program</td><td>MOU for liaison contact, handoff format, and referral back to community</td></tr>
+<tr><td><b>OnPoint NYC</b> and other harm-reduction orgs</td><td>OnPoint operates two overdose prevention centers (East Harlem, Washington Heights) and reports 2,000+ overdose interventions<span class="cite">[28]</span></td><td>Cross-training (naloxone, overdose response); referrals; possible Safe Zone hosting by local harm-reduction partners</td></tr>
+<tr><td><b>Nightlife &amp; event producers</b></td><td>Where many difficult experiences start</td><td>Event coverage contracts; venue staff training; referral line</td></tr>
+<tr><td><b>Universities</b></td><td>Evaluation, volunteers (social work, nursing, medicine)</td><td>Field placements; IRB-approved evaluation (as in Zendo’s 2026 study)<span class="cite">[8]</span></td></tr>
+</table>
+
+<!-- PILOT -->
+<h1 style="margin-top:14pt">16. Pilot plan &amp; phased rollout</h1>
+<svg width="660" height="170" viewBox="0 0 660 170" font-family="Inter" font-size="9">
+ <line x1="10" y1="22" x2="650" y2="22" stroke="#D5DED9"/>
+ <g font-size="8" fill="#5E6E75" text-anchor="middle"><text x="10" y="14">M0</text><text x="117" y="14">M6</text><text x="223" y="14">M12</text><text x="330" y="14">M18</text><text x="437" y="14">M24</text><text x="543" y="14">M30</text><text x="650" y="14">M36+</text></g>
+ <rect x="10" y="32" width="18" height="24" rx="5" fill="#CDBB9A"/><text x="34" y="48" fill="#8a6f45" font-weight="700">0 Approve</text>
+ <rect x="28" y="60" width="89" height="24" rx="5" fill="#7FA99B"/><text x="34" y="76" fill="#fff" font-weight="700">1 Discover &amp; build</text>
+ <rect x="117" y="88" width="160" height="24" rx="5" fill="#2E6B78"/><text x="123" y="104" fill="#fff" font-weight="700">2 Brooklyn pilot (limited hours)</text>
+ <rect x="277" y="116" width="213" height="24" rx="5" fill="#1F4E5A"/><text x="283" y="132" fill="#fff" font-weight="700">3 More NYC neighborhoods</text>
+ <rect x="490" y="144" width="160" height="24" rx="5" fill="#C2774E"/><text x="496" y="160" fill="#fff" font-weight="700">4 Other East Coast cities</text>
+ <g fill="#6E6A9E"><polygon points="28,60 22,52 34,52"/><polygon points="117,88 111,80 123,80"/><polygon points="277,116 271,108 283,108"/><polygon points="490,144 484,136 496,136"/></g>
+</svg>
+<div class="fig">Figure 4. Indicative timeline; each ▼ marks a go/no-go gate reviewed by Zendo leadership. Months are planning assumptions.</div>
+</div>
+
+<div class="section">
+<table>
+<thead><tr><th style="width:20%">Phase</th><th style="width:42%">Key activities</th><th>Gate to move on</th></tr></thead>
+<tr><td><b>0 · Approval</b><br><span class="small">~Month 0–1</span></td><td>Present plan; name Zendo sponsor; agree scope, branding, and decision rights</td><td>Written go-ahead for discovery</td></tr>
+<tr><td><b>1 · Discover &amp; build</b><br><span class="small">~Months 1–6</span></td><td>Brooklyn needs assessment &amp; partner meetings; counsel and insurance review; hire clinical lead; draft protocols; recruit first cohort; app MVP or Serenity extension; secure Safe Zone host; pilot funding</td><td>Insurance bound; protocols signed by clinical lead &amp; Medical Director; ≥ <span class="ph">[#]</span> credentialed Tier 2; funding for 12 months</td></tr>
+<tr><td><b>2 · Brooklyn pilot</b><br><span class="small">~Months 6–15</span></td><td>Start with event coverage and Safe Zone on <span class="ph">[e.g., Fri–Sat nights]</span>; then partner-referred field responses; monthly review of every escalation</td><td>Safety record meets thresholds; volunteer retention; partner satisfaction; sustainable funding path</td></tr>
+<tr><td><b>3 · More NYC chapters</b><br><span class="small">~Months 15–27</span></td><td>Add 1–2 neighborhoods <span class="ph">[candidates]</span>; regional clinical pool; Resource Board; consider public requester feature</td><td>Chapter playbook validated; multi-year funding</td></tr>
+<tr><td><b>4 · East Coast</b><br><span class="small">~Month 27+</span></td><td>Replicate in cities with strong volunteer bases <span class="ph">[e.g., Philadelphia, Boston, New Jersey, DC — to be assessed]</span>; state-specific licensure and legal review</td><td>Local anchor partner + licensed clinical lead in that state</td></tr>
+</table>
+
+<!-- METRICS -->
+<h1 style="margin-top:14pt">17. Success metrics</h1>
+<div class="grid2">
+<div><h3>Reach &amp; responsiveness</h3><ul><li>Encounters per month (field, Safe Zone, events)</li><li>Median time from alert to arrival — target <span class="ph">[X min]</span></li><li>% of operating hours with full coverage (responders + clinician)</li><li>Events covered</li></ul>
+<h3>Outcomes</h3><ul><li>% resolved without ED transport; % appropriately escalated (clinician-reviewed)</li><li>Police involvement rate</li><li>Guest-reported experience (“felt safe/heard”) — a measure Fireside also uses<span class="cite">[15]</span></li><li>% of consenting guests connected to follow-up</li></ul></div>
+<div><h3>Safety &amp; quality</h3><ul><li>Adverse events and safety incidents (target: zero serious harm to guests or volunteers)</li><li>% encounters with clinician present and signed off (target: 100%)</li><li>Record completeness at close (Serenity-style validation)</li></ul>
+<h3>Volunteers &amp; sustainability</h3><ul><li>Volunteers trained, credentialed, retained at 6/12 months</li><li>Volunteer well-being check-ins</li><li>Funding diversity (no source &gt; <span class="ph">[40]</span>% of budget)</li><li>Partner MOUs signed</li></ul></div>
+</div>
+<p class="small">Baselines for comparison (e.g., local ED visits or 911 mental-health calls) should come from public data or partners: <span class="ph">[baseline sources]</span>. Evaluation should follow the documentation and ethics approach Zendo used in its 2026 study.<span class="cite">[8]</span></p>
+</div>
+<!-- DECISIONS + NEXT STEPS -->
+<div class="section">
+<div class="kicker">Decisions</div>
+<h1>18. Open decisions, next steps &amp; asks</h1>
+<h3>Key decisions for leadership</h3>
+<table>
+<thead><tr><th style="width:4%">#</th><th style="width:32%">Decision</th><th>Options / recommendation</th></tr></thead>
+<tr><td>1</td><td>Program home &amp; brand</td><td>Zendo-run program · Zendo-licensed affiliate · independent partner trained by Zendo. <i>Rec: Zendo-sponsored pilot with a clear brand-use agreement.</i></td></tr>
+<tr><td>2</td><td>Tier mapping</td><td>Confirm Zendo’s two levels and what extra field training Tier 2 needs. <i>Rec: co-design with Zendo training team.</i></td></tr>
+<tr><td>3</td><td>Paired vs. solo response</td><td><i>Rec: pairs for all field responses during pilot.</i></td></tr>
+<tr><td>4</td><td>Who can raise an alert</td><td>Partners/events only · hotline referrals · public app. <i>Rec: partners + events first; public later.</i></td></tr>
+<tr><td>5</td><td>Clinical coverage model</td><td>One LCSW lead + LMSW on-call pool; shared across chapters; hourly vs retainer. Psychiatrist retainer; Medical Director role.</td></tr>
+<tr><td>6</td><td>Safe Zone model &amp; hours</td><td>Partner-hosted vs. leased; which nights/hours first.</td></tr>
+<tr><td>7</td><td>App approach</td><td>Extend Serenity · new app writing to Serenity · off-the-shelf dispatch tool for pilot.</td></tr>
+<tr><td>8</td><td>Liaison compensation</td><td>Volunteer vs. stipend vs. part-time staff.</td></tr>
+<tr><td>9</td><td>Policies needing counsel</td><td>Transport, minors, mandated reporting, data retention, law-enforcement requests.</td></tr>
+<tr><td>10</td><td>Pilot neighborhood</td><td>Which Brooklyn area? Weigh nightlife density, volunteer base, partners, and overlap with B-HEARD coverage areas.<span class="cite">[11]</span></td></tr>
+<tr><td>11</td><td>Fiscal home</td><td>Zendo budget line · fiscal sponsor · separate entity later.</td></tr>
+</table>
+
+<div class="grid3">
+<div class="box b-sage"><h3>Next 30 days</h3><ul class="small" style="margin:0"><li>Share this draft with Zendo leadership</li><li>Confirm training levels and Serenity contacts</li><li>List Brooklyn volunteers interested</li><li>Informal calls: Fireside, a harm-reduction partner</li></ul></div>
+<div class="box b-lav"><h3>Next 60 days</h3><ul class="small" style="margin:0"><li>Counsel &amp; broker conversations</li><li>Identify clinical lead candidates</li><li>Shortlist Safe Zone hosts</li><li>Gather local baseline data</li></ul></div>
+<div class="box b-sand"><h3>Next 90 days</h3><ul class="small" style="margin:0"><li>Finalize pilot budget (replace placeholders)</li><li>Submit first grant / donor asks</li><li>Draft protocols v1</li><li>App approach decision &amp; prototype</li></ul></div>
+</div>
+
+<div class="box b-terra"><h3>What I’m asking for today</h3>
+<p style="margin:0">(1) A green light to run Phase 1 discovery under Zendo’s guidance; (2) a named Zendo staff sponsor; (3) introductions to Zendo’s training lead, Medical Director, systems/Serenity team, and counsel; and (4) permission to begin partner conversations in Brooklyn describing this as a <i>proposal under consideration</i>.</p><p class="small" style="margin:5pt 0 0"><b>Disclaimer:</b> volunteer-authored proposal; not affiliated with or endorsed by Zendo Project or MAPS until formally approved; not legal, medical, or clinical advice; highlighted placeholders must be replaced with verified data.</p></div>
+
+</div>
+
+<!-- SOURCES -->
+<div class="section">
+<h1>19. Sources</h1>
+<p class="small">Accessed October 2026. Statements attributed to organizations reflect their own published materials.</p>
+<ol class="refs">
+<li>Pires CR, Bagley S, Ponte L. “Zendo Project Celebrates a Decade at Burning Man and a New Beginning for the Organization.” MAPS Bulletin, March 2023. <a href="https://maps.org/news/bulletin/zendo/">https://maps.org/news/bulletin/zendo/</a></li>
+<li>Zendo Project — About (mission, Four Principles of Psychedelic Care, team). <a href="https://zendoproject.org/about/">https://zendoproject.org/about/</a></li>
+<li>Zendo Project — homepage. <a href="https://zendoproject.org/">https://zendoproject.org/</a></li>
+<li>Zendo Project — Volunteer (event services, volunteer roles). <a href="https://zendoproject.org/volunteer/">https://zendoproject.org/volunteer/</a></li>
+<li>Zendo Project Harm Reduction Manual, Burning Man 2014 (mission statement). <a href="https://maps.org/images/pdf/Psychedelic-Harm-Reduction-2014.pdf">https://maps.org/images/pdf/Psychedelic-Harm-Reduction-2014.pdf</a></li>
+<li>Zendo Project — Zendo SIT: Psychedelic Harm Reduction & Peer Support Training (format, completion award terms). <a href="https://zendoproject.org/sit/">https://zendoproject.org/sit/</a></li>
+<li>Zendo Project — Zendo SIT Course Summary (PDF, 2024). <a href="https://zendoproject.org/wp-content/uploads/2024/10/Zendo-SIT-Course-Summary.pdf">https://zendoproject.org/wp-content/uploads/2024/10/Zendo-SIT-Course-Summary.pdf</a></li>
+<li>“Designing evaluation infrastructure for psychedelic harm reduction at events: a methodological framework with formative mixed-methods field application.” Frontiers in Public Health, 29 Sept 2026 (Zendo-affiliated co-authors; describes the Serenity field application). <a href="https://doi.org/10.3389/fpubh.2026.1927839">https://doi.org/10.3389/fpubh.2026.1927839</a></li>
+<li>White Bird Clinic. “What is CAHOOTS?” Oct 2020. <a href="https://whitebirdclinic.org/what-is-cahoots/">https://whitebirdclinic.org/what-is-cahoots/</a></li>
+<li>Hansen-White R. “White Bird, City end CAHOOTS in Eugene over contract, funding issues.” KLCC, 8 April 2025. <a href="https://www.klcc.org/health-medicine/2025-04-08/white-bird-city-end-cahoots-in-eugene-over-contract-funding-issues">https://www.klcc.org/health-medicine/2025-04-08/white-bird-city-end-cahoots-in-eugene-over-contract-funding-issues</a></li>
+<li>NYC Mayor’s Office of Community Mental Health — B-HEARD 911 Mental Health Response (FAQ, coverage, team composition, NYC 988). <a href="https://mentalhealth.cityofnewyork.us/b-heard">https://mentalhealth.cityofnewyork.us/b-heard</a></li>
+<li>Kim E. “Mamdani’s new mental health plan hinges on troubled de Blasio initiative.” Gothamist, 31 March 2026. <a href="https://gothamist.com/news/mamdanis-new-mental-health-plan-hinges-on-troubled-de-blasio-initiative">https://gothamist.com/news/mamdanis-new-mental-health-plan-hinges-on-troubled-de-blasio-initiative</a></li>
+<li>SAMHSA. “U.S. Transition to 988 Suicide & Crisis Lifeline Begins Saturday.” 15 July 2022. <a href="https://www.samhsa.gov/newsroom/press-announcements/20220715/us-transition-988-suicide-crisis-lifeline-begins-saturday">https://www.samhsa.gov/newsroom/press-announcements/20220715/us-transition-988-suicide-crisis-lifeline-begins-saturday</a></li>
+<li>SAMHSA. 988 Frequently Asked Questions. <a href="https://www.samhsa.gov/mental-health/988/faqs">https://www.samhsa.gov/mental-health/988/faqs</a></li>
+<li>Fireside Project — homepage (Psychedelic Support Line, hours, conversation and satisfaction figures). <a href="https://firesideproject.org/">https://firesideproject.org/</a></li>
+<li>Fireside Project. “Five Years of Impact.” <a href="https://impact.firesideproject.org/">https://impact.firesideproject.org/</a></li>
+<li>NYSED Office of the Professions. “What is the difference between the LMSW and the LCSW?” <a href="https://www.op.nysed.gov/professions/social-work/faqs/what-difference-between-lmsw-and-lcsw">https://www.op.nysed.gov/professions/social-work/faqs/what-difference-between-lmsw-and-lcsw</a></li>
+<li>NYSED Office of the Professions. LMSW Licensure & Practice FAQs (supervision requirements). <a href="https://www.op.nysed.gov/professions/licensed-master-social-worker/faq-licensure-practice">https://www.op.nysed.gov/professions/licensed-master-social-worker/faq-licensure-practice</a></li>
+<li>N.J. Admin. Code §13:44G-8.1 (Clinical supervision) and §13:44G-3.1 (LCSW scope). <a href="https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-13-44G-8-1">https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-13-44G-8-1</a></li>
+<li>Mass.gov. Frequently Asked Questions About Social Workers; 258 CMR 12.00 (scope of practice). <a href="https://www.mass.gov/info-details/frequently-asked-questions-about-social-workers">https://www.mass.gov/info-details/frequently-asked-questions-about-social-workers</a></li>
+<li>Zendo Project Bulletin. “A Model for Working with Difficult Psychedelic Experiences at Events” (MAPS Serenity Tent, Hookahville). <a href="https://zendoproject.org/bulletin/a-model-for-working-with-difficult-psychedelic-experiences-at-events/">https://zendoproject.org/bulletin/a-model-for-working-with-difficult-psychedelic-experiences-at-events/</a></li>
+<li>U.S. HHS. HIPAA — Covered Entities and Business Associates. <a href="https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html">https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html</a></li>
+<li>42 CFR Part 2 — Confidentiality of Substance Use Disorder Patient Records (eCFR). <a href="https://www.ecfr.gov/current/title-42/chapter-I/subchapter-A/part-2">https://www.ecfr.gov/current/title-42/chapter-I/subchapter-A/part-2</a></li>
+<li>New York SHIELD Act — N.Y. General Business Law §§899-aa, 899-bb. <a href="https://www.nysenate.gov/legislation/laws/GBS/899-BB">https://www.nysenate.gov/legislation/laws/GBS/899-BB</a></li>
+<li>New York State Department of Health. “New York State’s 911 Good Samaritan Law Protects YOU”; N.Y. Penal Law §220.78. <a href="https://www.health.ny.gov/diseases/aids/general/opioid_overdose_prevention/good_samaritan_law.htm">https://www.health.ny.gov/diseases/aids/general/opioid_overdose_prevention/good_samaritan_law.htm</a></li>
+<li>N.Y. Public Health Law §3000-a (Emergency medical treatment). <a href="https://www.nysenate.gov/legislation/laws/PBH/3000-A">https://www.nysenate.gov/legislation/laws/PBH/3000-A</a></li>
+<li>Volunteer Protection Act of 1997, 42 U.S.C. §14501 et seq. <a href="https://www.law.cornell.edu/uscode/text/42/chapter-139">https://www.law.cornell.edu/uscode/text/42/chapter-139</a></li>
+<li>OnPoint NYC. “OnPoint NYC Announces Over 2,000 Overdose Interventions in Their Overdose Prevention Centers.” <a href="https://onpointnyc.org/2000-overdose-interventions/">https://onpointnyc.org/2000-overdose-interventions/</a></li>
+</ol>
+</div>
+</body></html>
